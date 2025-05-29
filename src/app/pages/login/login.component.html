@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="login-box">
+    <img src="assets/logo.png" alt="Logo Reutiliza" class="logo" />
+    <h2>Entrar no Reutiliza</h2>
+
+    <form (ngSubmit)="login()" #loginForm="ngForm" novalidate>
+      <input
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        email
+        autocomplete="username"
+      />
+      <input
+        type="password"
+        placeholder="Senha"
+        [(ngModel)]="senha"
+        name="senha"
+        required
+        minlength="6"
+        autocomplete="current-password"
+      />
+      <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+    </form>
+
+    <p class="error" *ngIf="erro">{{ erro }}</p>
+  </div>
+</div>
