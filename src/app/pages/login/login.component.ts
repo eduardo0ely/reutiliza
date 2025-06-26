@@ -85,7 +85,7 @@ export class LoginComponent implements OnInit {
       // Lógica de LOGIN
       const resultado = this.userService.login(email, senha);
       if (resultado.success) {
-        this.router.navigate(['/materiais']); // Redireciona para o mapa após login
+        this.router.navigate(['/rota']); // Redireciona para o mapa após login
       } else {
         this.mensagemErro = resultado.message;
       }
