@@ -1,59 +1,77 @@
-# Reutiliza
+# ♻️ Reutiliza App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+![Tela do Mapa](https://i.imgur.com/gA3G1T8.png)
 
-## Development server
+## 🎯 Sobre o Projeto
 
-To start a local development server, run:
+O **Reutiliza** é uma aplicação web interativa desenvolvida como a implementação prática do projeto acadêmico "ABEX-II". O objetivo principal é ajudar os usuários a encontrarem os pontos de coleta de materiais recicláveis mais próximos de sua localização atual, incentivando a prática da reciclagem e o descarte correto de resíduos na cidade de Chapecó - SC.
 
-```bash
-ng serve
-```
+O usuário pode visualizar todos os pontos de coleta no mapa, filtrar por tipo de material (plástico, vidro, etc.) e traçar uma rota otimizada do seu local até o destino.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ✨ Funcionalidades Implementadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Autenticação de Usuários:** Sistema completo de Login e Cadastro de contas.
+* **Mapa Interativo (Leaflet):**
+    * **Geolocalização:** O mapa centraliza automaticamente na localização atual do usuário.
+    * **Visualização de Pontos:** Exibe todos os pontos de coleta cadastrados com ícones personalizados.
+    * **CRUD no Mapa:** Permite criar, editar e excluir pontos de coleta diretamente clicando no mapa.
+* **Sistema de Roteamento:**
+    * **Filtro por Material:** Botões de acesso rápido para filtrar por tipo de material.
+    * **Rota até o Ponto Mais Próximo:** Calcula e desenha a rota otimizada da localização do usuário até o ponto de coleta mais próximo que aceita o material selecionado.
+* **Persistência de Dados:** Todas as informações de usuários e pontos de coleta são salvas localmente no navegador usando `localStorage`.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng generate --help
-```
+* **Frontend:** [Angular](https://angular.io/) v17+
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+* **Mapa:** [Leaflet](https://leafletjs.com/)
+* **Roteamento no Mapa:** [Leaflet Routing Machine](http://www.liedman.net/leaflet-routing-machine/)
+* **Estilização:** CSS3 puro e responsivo
 
-## Building
+---
 
-To build the project run:
+## 🚀 Como Executar o Projeto
 
-```bash
-ng build
-```
+Para executar o projeto em sua máquina local, siga os passos abaixo:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/eduardo0ely/reutiliza.git](https://github.com/eduardo0ely/reutiliza.git)
+    ```
 
-## Running unit tests
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd reutiliza
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3.  **Instale as dependências:**
+    (É necessário ter o [Node.js](https://nodejs.org/) instalado)
+    ```bash
+    npm install
+    ```
 
-```bash
-ng test
-```
+4.  **Execute a aplicação:**
+    ```bash
+    ng serve
+    ```
 
-## Running end-to-end tests
+5.  **Acesse no navegador:**
+    Abra seu navegador e acesse `http://localhost:4200/`.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## STATUS DO PROJETO
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+🚧 **Em desenvolvimento...** 🚧
 
-## Additional Resources
+Este projeto foi desenvolvido como parte de um trabalho acadêmico e está em constante evolução.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença.
