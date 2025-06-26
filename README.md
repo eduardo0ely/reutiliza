@@ -1,7 +1,5 @@
 # ♻️ Reutiliza App
 
-![Tela do Mapa](https://i.imgur.com/gA3G1T8.png)
-
 ## 🎯 Sobre o Projeto
 
 O **Reutiliza** é uma aplicação web interativa desenvolvida como a implementação prática do projeto acadêmico "ABEX-II". O objetivo principal é ajudar os usuários a encontrarem os pontos de coleta de materiais recicláveis mais próximos de sua localização atual, incentivando a prática da reciclagem e o descarte correto de resíduos na cidade de Chapecó - SC.
