@@ -31,8 +31,10 @@
               "node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css",
               "src/styles.css"
             ],
-            "scripts": []
-          },
+            "scripts": [
+              "node_modules/leaflet/dist/leaflet.js"
+            ]
+          }
           "configurations": {
             "production": {
               "budgets": [
